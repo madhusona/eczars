@@ -1,0 +1,16 @@
+{
+  "name": "telegram-bot-uitcse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "string-table": "^0.1.5",
+    "unirest": "^0.4.1",
+    "http":"^0.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js"
+  }
+}
