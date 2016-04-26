@@ -65,7 +65,7 @@ var getmarks = function (message) {
      chat_id : message.chat.id,
      text : "You told be to do something, so I took your input and made it all caps. Look: " + caps
      };*/
-    var requrl = 'https://csemarks.apispark.net/v1/' + arg[1] + '/?Reg_No=' + arg[2];
+    var requrl = 'https://awscse.apispark.net/v1/' + arg[1] + '/?Reg_No=' + arg[2];
     console.log(requrl);
     var req = unirest("GET", requrl);
     console.log(2);
