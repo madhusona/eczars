@@ -7,7 +7,10 @@
 var express = require('express');
 var app = express();
 var http = require('http')
-var port=process.env.VCAP_APP_PORT || 1337;
+// IBM BLUEMIX
+//var port=process.env.VCAP_APP_PORT || 1337;
+//Heroku
+var port = process.env.PORT || 8080;
 app.set('port', port);
 
 //app.set('css', __dirname + '/css');
