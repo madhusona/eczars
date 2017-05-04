@@ -75,7 +75,7 @@ var getmarks = function (message) {
     req.headers({
         "content-type": "application/json",
         "accept": "application/json",
-        "host": "csemarks.apispark.net"
+        "host": "marks.restlet.net"
     });
 
     req.end(function (res) {
