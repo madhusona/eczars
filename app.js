@@ -68,7 +68,7 @@ var getmarks = function (message) {
      chat_id : message.chat.id,
      text : "You told be to do something, so I took your input and made it all caps. Look: " + caps
      };*/
-    var requrl = 'https://awscse.apispark.net/v1/' + arg[1] + '/?RegNo=' + arg[2];
+    var requrl = 'https://marks.restlet.net:443/v1/' + arg[1] + '/?RegNo=' + arg[2];
     console.log(requrl);
     var req = unirest("GET", requrl);
     console.log(2);
@@ -85,13 +85,13 @@ var getmarks = function (message) {
         //var totg = stringTable.create(res.body, {headers: ['Name', 'EEFA', 'CG', 'MPC', 'DSP', 'DWM', 'WN']});
         var totg = "";
         totg = totg + stringTable.create(res.body, {headers: ['Name']}) + "\n\n";
-        totg = totg + stringTable.create(res.body, {headers: ['Reg_No']}) + "\n\n";
-        totg = totg + stringTable.create(res.body, {headers: ['EEFA']}) + "\n\n";
-        totg = totg + stringTable.create(res.body, {headers: ['CG']}) + "\n\n";
-        totg = totg + stringTable.create(res.body, {headers: ['DWM']}) + "\n\n";
-        totg = totg + stringTable.create(res.body, {headers: ['MPC']}) + "\n\n";
-        totg = totg + stringTable.create(res.body, {headers: ['DSP']}) + "\n\n";
-        totg = totg + stringTable.create(res.body, {headers: ['WN']}) + "\n\n";
+        totg = totg + stringTable.create(res.body, {headers: ['RegNo']}) + "\n\n";
+        totg = totg + stringTable.create(res.body, {headers: ['CS6401_OS']}) + "\n\n";
+        totg = totg + stringTable.create(res.body, {headers: ['CS6403_SE']}) + "\n\n";
+        totg = totg + stringTable.create(res.body, {headers: ['CS6402_DAA']}) + "\n\n";
+        totg = totg + stringTable.create(res.body, {headers: ['EC6504_MP']}) + "\n\n";
+        totg = totg + stringTable.create(res.body, {headers: ['MA6453_PQT']}) + "\n\n";
+      //  totg = totg + stringTable.create(res.body, {headers: ['WN']}) + "\n\n";
 
         console.log(totg);
         var answer = {
